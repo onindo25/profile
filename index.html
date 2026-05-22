@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>অনিন্দ্য '২৫ - BAF Shaheen College Bogura Batch Directory</title>
+  <!-- ========== GOOGLE FONTS: Bangla friendly & modern ========== -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Noto+Sans+Bengali:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ========== FONT AWESOME 6 (icons) ========== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* ---------- GLOBAL RESET & BASE STYLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans Bengali', 'Inter', system-ui, -apple-system, sans-serif;
+      background: #f4f7fc;
+      color: #0a1e2f;
+      scroll-behavior: smooth;
+      transition: background 0.3s, color 0.2s;
+    }
+
+    /* ---------- DARK MODE THEME ---------- */
+    body.dark {
+      background: #0a1120;
+      color: #eef2ff;
+    }
+
+    body.dark .card {
+      background: #16213e;
+      color: #eef2ff;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    body.dark .search-filter-bar {
+      background: #0f172a;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    body.dark .hero-overlay {
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    body.dark .btn-primary {
+      background: linear-gradient(135deg, #c9a03d, #b8860b);
+      color: #0a1e2f;
+    }
+
+    body.dark footer {
+      background: #0b1120;
+      border-top-color: #1e2a47;
+    }
+
+    body.dark .intro-card {
+      background: #1e293b;
+    }
+
+    body.dark .search-wrapper {
+      background: #0f172a;
+    }
+
+    body.dark #universityFilter {
+      background: #0f172a;
+      border-color: #2d3a5e;
+      color: white;
+    }
+
+    body.dark .closing-card {
+      background: #17233b;
+    }
+
+    body.dark .no-results {
+      background: #1e2a3a;
+    }
+
+    /* ---------- CONTAINER (centered max-width) ---------- */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ---------- HEADER SECTION (logo left + center title + logo right) ---------- */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px 0;
+      gap: 20px;
+      background: linear-gradient(135deg, #0b2b42 0%, #0a1f2f 100%);
+      border-radius: 0 0 32px 32px;
+      margin-bottom: 28px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Logo images (onindo.jpg and bafsb.png) */
+    .logo-img {
+      width: 70px;
+      height: 70px;
+      object-fit: cover;
+      border-radius: 20px;
+      background: white;
+      padding: 5px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
+
+    .logo-img:hover {
+      transform: scale(1.02);
+    }
+
+    /* Center title area */
+    .center-title {
+      text-align: center;
+      color: #f9eec1;
+    }
+
+    .center-title h1 {
+      font-size: 2rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .center-title p {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #ffecb3;
+    }
+
+    /* ---------- FULL WIDTH GROUP PHOTO WITH OVERLAY & ANIMATION ---------- */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      border-radius: 28px;
+      margin-bottom: 32px;
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .hero-section:hover .hero-img {
+      transform: scale(1.02);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(10,30,47,0.4), rgba(0,0,0,0.5));
+      border-radius: 28px;
+    }
+
+    /* ---------- WELCOME / INTRO SECTION (Bangla paragraph, card style) ---------- */
+    .intro-card {
+      background: white;
+      border-radius: 28px;
+      padding: 28px 32px;
+      margin-bottom: 40px;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.05);
+      border-left: 8px solid #c9a03d;
+      transition: all 0.2s;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* ---------- SEARCH & FILTER BAR (search by name/roll, filter by university, dark mode toggle) ---------- */
+    .search-filter-bar {
+      background: white;
+      border-radius: 60px;
+      padding: 12px 24px;
+      margin-bottom: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.05);
+    }
+
+    .search-wrapper {
+      flex: 2;
+      min-width: 200px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #f0f2f5;
+      padding: 8px 16px;
+      border-radius: 40px;
+    }
+
+    .search-wrapper i {
+      color: #c9a03d;
+    }
+
+    #searchInput {
+      border: none;
+      background: transparent;
+      width: 100%;
+      padding: 10px 0;
+      font-size: 1rem;
+      outline: none;
+      font-family: inherit;
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    #universityFilter {
+      padding: 10px 16px;
+      border-radius: 40px;
+      border: 1px solid #ddd;
+      background: #f0f2f5;
+      font-family: inherit;
+      font-weight: 500;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .dark-toggle {
+      background: #e2e8f0;
+      border: none;
+      border-radius: 40px;
+      padding: 8px 18px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      transition: 0.2s;
+    }
+
+    body.dark .dark-toggle {
+      background: #334155;
+      color: #ffd966;
+    }
+
+    /* ---------- PROFILE GRID (responsive: 3 per row desktop, 1 per row mobile via auto-fill) ---------- */
+    .profiles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 28px;
+      margin: 40px 0;
+    }
+
+    /* Individual student card */
+    .card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Profile image (mobile_number.jpg) with lazy loading & fallback avatar */
+    .card-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: #d9e2ef;
+      transition: all 0.3s;
+    }
+
+    .card-content {
+      padding: 20px 20px 24px;
+      flex: 1;
+    }
+
+    .student-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #0b2b42;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    body.dark .student-name {
+      color: #ffdf9c;
+    }
+
+    .detail-item {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 0.85rem;
+      margin: 8px 0;
+      flex-wrap: wrap;
+    }
+
+    .detail-item i {
+      width: 24px;
+      color: #c9a03d;
+    }
+
+    /* Facebook button with link */
+    .fb-link {
+      display: inline-block;
+      margin-top: 12px;
+      background: #1877f2;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 40px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    .fb-link:hover {
+      background: #0e62c9;
+      transform: scale(0.98);
+    }
+
+    .no-fb {
+      background: #6c757d;
+      cursor: default;
+      opacity: 0.7;
+    }
+
+    /* ---------- CALL TO ACTION BUTTON (animated, eye-catching) ---------- */
+    .cta-section {
+      text-align: center;
+      margin: 50px 0 40px;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0b2b42, #1a4b6e);
+      border: none;
+      padding: 16px 32px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      border-radius: 60px;
+      color: white;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.3s;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      border: 1px solid rgba(255,215,0,0.4);
+    }
+
+    .btn-primary:hover {
+      transform: scale(1.02);
+      background: linear-gradient(135deg, #1f5e83, #0b2b42);
+      box-shadow: 0 16px 28px rgba(0,0,0,0.25);
+    }
+
+    .btn-primary a {
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    /* ---------- CLOSING MOTIVATIONAL SECTION ---------- */
+    .closing-card {
+      background: #eef3fa;
+      padding: 32px;
+      border-radius: 32px;
+      text-align: center;
+      margin: 30px 0 20px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* ---------- FOOTER WITH FACEBOOK PAGE LINK ---------- */
+    footer {
+      text-align: center;
+      padding: 28px 20px;
+      border-top: 1px solid #cbd5e1;
+      margin-top: 20px;
+    }
+
+    footer a {
+      color: #c9a03d;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* No results message */
+    .no-results {
+      text-align: center;
+      padding: 50px;
+      font-size: 1.2rem;
+      background: #fff3e0;
+      border-radius: 48px;
+    }
+
+    /* ---------- RESPONSIVE (mobile adjustments) ---------- */
+    @media (max-width: 768px) {
+      .header {
+        justify-content: center;
+      }
+      .center-title h1 {
+        font-size: 1.6rem;
+      }
+      .hero-section {
+        height: 180px;
+      }
+      .search-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+        border-radius: 32px;
+      }
+      .card-img {
+        height: 190px;
+      }
+    }
+
+    /* fade-in animation for smooth appearance */
+    .fade-in {
+      animation: fadeInUp 0.5s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- ========== HEADER SECTION: left logo, center title, right logo ========== -->
+  <div class="header">
+    <!-- Left side: onindo.jpg -->
+    <img src="onindo.jpg" alt="Onindo Logo" class="logo-img" onerror="this.src='https://placehold.co/70x70?text=Onindo'">
+    <div class="center-title">
+      <h1>অনিন্দ্য '২৫</h1>
+      <p>BAF Shaheen College Bogura <br> Batch Directory & Admission Journey</p>
+    </div>
+    <!-- Right side: bafsb.png -->
+    <img src="bafsb.png" alt="BAFSB Logo" class="logo-img" onerror="this.src='https://placehold.co/70x70?text=BAFSB'">
+  </div>
+
+  <!-- ========== GROUP PHOTO SECTION: full width with overlay & hover animation ========== -->
+  <div class="hero-section">
+    <img src="group.jpg" alt="Batch Group Photo" class="hero-img" loading="lazy" onerror="this.src='https://placehold.co/1200x400?text=Group+Photo'">
+    <div class="hero-overlay"></div>
+  </div>
+
+  <!-- ========== WELCOME / INTRO SECTION (Bangla paragraph, beautifully styled) ========== -->
+  <div class="intro-card fade-in">
+    <p>প্রিয় অনিন্দ্য '২৫ পরিবারের সদস্যবৃন্দ,<br>
+    সকলকে জানাই আন্তরিক শুভেচ্ছা ও ভালোবাসা।
+    আমাদের এই ব্যাচ শুধু একটি নাম নয়, এটি একটি স্মৃতি, একটি বন্ধন, একটি যাত্রা।
+    আজ আমরা বিভিন্ন বিশ্ববিদ্যালয় ও প্রতিষ্ঠানে নিজেদের ভবিষ্যৎ গড়তে এগিয়ে যাচ্ছি।
+    এই ওয়েব পেজটি আমাদের সেই যাত্রার একটি ছোট প্রতিচ্ছবি —
+    যেখানে সংরক্ষিত আছে আমাদের সবার তথ্য, অর্জন এবং পথচলা।
+    আশা করি, এটি আমাদের বন্ধনকে আরও দৃঢ় করবে এবং ভবিষ্যতে আমাদের সংযুক্ত রাখবে।</p>
+  </div>
+
+  <!-- ========== SEARCH BAR + UNIVERSITY FILTER + DARK MODE TOGGLE ========== -->
+  <div class="search-filter-bar">
+    <div class="search-wrapper">
+      <i class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="নাম, রোল, মোবাইল, বিশ্ববিদ্যালয়...">
+    </div>
+    <div class="filter-group">
+      <select id="universityFilter">
+        <option value="all">🎓 সব বিশ্ববিদ্যালয়</option>
+      </select>
+      <button id="darkModeToggle" class="dark-toggle"><i class="fas fa-moon"></i> <span>ডার্ক মোড</span></button>
+    </div>
+  </div>
+
+  <!-- ========== STUDENT PROFILES GRID (cards: image, name, address, mobile, roll, university, dept, FB) ========== -->
+  <div id="profilesContainer" class="profiles-grid"></div>
+
+  <!-- ========== CALL TO ACTION BUTTON (linked to Google Form) ========== -->
+  <div class="cta-section">
+    <a href="https://forms.gle/d5V4HSWqsXXc32nE9" target="_blank" rel="noopener noreferrer">
+      <button class="btn-primary"><i class="fas fa-pen-alt"></i> অনিন্দ্য '২৫? তোমার আপডেট এখনই সাবমিট করো!</button>
+    </a>
+  </div>
+
+  <!-- ========== CLOSING MOTIVATIONAL BANGLA PARAGRAPH ========== -->
+  <div class="closing-card">
+    <p>আমাদের এই যাত্রা এখানেই শেষ নয় —<br>
+    এটি কেবল শুরু।
+    আগামী দিনে আমরা আরও বড় কিছু করবো,
+    একসাথে এগিয়ে যাবো, একে অপরের পাশে থাকবো।
+    অনিন্দ্য '২৫ — শুধু একটি ব্যাচ নয়, এটি একটি পরিবার ❤️</p>
+  </div>
+
+  <!-- ========== FOOTER: Facebook page link (official page) ========== -->
+  <footer>
+    <a href="https://www.facebook.com/share/18vkPyeBkn/" target="_blank" rel="noopener">
+      <i class="fab fa-facebook"></i> অনিন্দ্য '২৫ অফিসিয়াল ফেসবুক পেজ
+    </a>
+  </footer>
+</div>
+
+<script>
+  // ============================================================
+  // STUDENT DATA (Provided in requirement) - All fields present
+  // ============================================================
+  const studentsData = [
+    { name: "Md. Shahriar Haque Shaon", address: "Upashahar, Bogura Sadar, Bogura", mobile: "01735402414", roll: "126396", university: "University of Rajshahi", dept: "Population Science and Human Resources Development", fb: "https://facebook.com/shshaonok" },
+    { name: "Al Zaber", address: "Sirajganj", mobile: "01980442815", roll: "126362", university: "International University of Business Agriculture and Technology", dept: "BSAg", fb: "https://www.facebook.com/share/1BBucnDzhf/" },
+    { name: "Md Abdullah Sheikh", address: "Pabna", mobile: "01706484029", roll: "126359", university: "Daffodil International University", dept: "CSE", fb: "" },
+    { name: "MD Hridoy Talukder", address: "Sirajganj", mobile: "01304321107", roll: "126363", university: "Daffodil International University", dept: "EEE", fb: "" },
+    { name: "Salman", address: "Olir Bazar, Bogura", mobile: "01760615323", roll: "—", university: "Bangladesh Army University of Science and Technology", dept: "CSE", fb: "https://www.facebook.com/salman.salman.9251" },
+    { name: "Mst. Mahmudun Nahar Esha", address: "Uposhahar, Bogura Sadar, Bogura", mobile: "01301293990", roll: "126461", university: "University of Rajshahi", dept: "English", fb: "" },
+    { name: "Naimur Ahmed Nazid", address: "Bangladesh", mobile: "01345025350", roll: "126413", university: "American International University-Bangladesh", dept: "EEE", fb: "https://www.facebook.com/naimur.sky" },
+    { name: "Md Al Jihad Hosain Sowmik", address: "Ghoraghat, Dinajpur", mobile: "01577379938", roll: "126438", university: "University of Chittagong", dept: "Soil Science", fb: "https://www.facebook.com/md.aljihadhosain" },
+    { name: "Al-Gaddafi", address: "Bogura Sadar", mobile: "01733041333", roll: "126378", university: "Government Unani and Ayurvedic Medical College", dept: "BUMS", fb: "https://www.facebook.com/share/1E9y2XgRXP/" },
+    { name: "MD Zobayer Hossain", address: "Bogura Sadar, Bogura", mobile: "01771977488", roll: "126376", university: "Eastern University", dept: "Pharmacy", fb: "" },
+    { name: "Saniul Islam Rony", address: "Bogura", mobile: "01703777882", roll: "126374", university: "United International University", dept: "BSCSE", fb: "" },
+    { name: "Atahar Uz Zaman Fida", address: "Mofiz Paglar Mor, Bogura", mobile: "01728707629", roll: "126349", university: "Vilnius University", dept: "Information System & Cyber Security", fb: "https://www.facebook.com/az.fida.9" },
+    { name: "Rafiul Islam", address: "Puran Dhaka", mobile: "01577356842", roll: "126435", university: "Jagannath University", dept: "Film & Television", fb: "facebook.com/roughyul" },
+    { name: "MD Naeem Mondol", address: "Nishindara, Bogura", mobile: "01608364553", roll: "126373", university: "Govt. A H College", dept: "Botany", fb: "https://www.facebook.com/share/1CdtekkAds/" },
+    { name: "Samiul Islam", address: "Bogura", mobile: "01731354839", roll: "126398", university: "University of Chittagong", dept: "EEE", fb: "" },
+    { name: "Shah Mahrab Haque", address: "Islampur (Horigari), Bogura", mobile: "01707511955", roll: "169377", university: "Bangladesh Army University of Science and Technology", dept: "Mechanical Engineering", fb: "" },
+    { name: "Shohanur Rahman Shuvo", address: "Pabna", mobile: "01922007656", roll: "126420", university: "Jashore University of Science and Technology", dept: "Industrial Production Engineering", fb: "https://www.facebook.com/share/1CeBTy2rhe/" },
+    { name: "Abir Ahmed Shihab", address: "Kuratoli, Dhaka", mobile: "01338847353", roll: "126412", university: "American International University-Bangladesh", dept: "EEE", fb: "https://www.facebook.com/abirahmedshihabSHB" },
+    { name: "Mashrafi Alam", address: "Joypurhat", mobile: "01602512451", roll: "126409", university: "Primeasia University", dept: "CSE", fb: "" },
+    { name: "Nazmul Huda", address: "Bogura", mobile: "01776008014", roll: "126389", university: "North South University", dept: "BBA", fb: "https://www.facebook.com/share/1KWKVTGiWt/" },
+    { name: "Sanjida Akter Alo", address: "Panchbibi, Joypurhat", mobile: "01915679958", roll: "126488", university: "University of Dhaka", dept: "EEE", fb: "" },
+    { name: "Antiq", address: "Pabna", mobile: "01719460973", roll: "126353", university: "Daffodil International University", dept: "CSE", fb: "" },
+    { name: "Nazim Uddin", address: "Gaibandha", mobile: "01750645992", roll: "212467", university: "Patuakhali Science and Technology University", dept: "Fisheries", fb: "" },
+    { name: "Md Shakil Sheikh", address: "Shibganj, Bogura", mobile: "01731184408", roll: "126391", university: "Azizul Haque College", dept: "Islamic History and Culture", fb: "https://www.facebook.com/sheikh.mohammad.shakil.992722" },
+    { name: "Rizwan", address: "Kalitala, Bogura", mobile: "01793040826", roll: "126368", university: "Govt. Azizul Haque College", dept: "Philosophy", fb: "Riz wan" },
+    { name: "Md Miftahul Jannah Abid", address: "Jamil Nagar, Bogura", mobile: "01580972201", roll: "—", university: "International Islamic University Malaysia", dept: "IT", fb: "" }
+  ];
+
+  // Helper: get image path following naming rule: mobile_number.jpg
+  function getImageSrc(mobile) {
+    return `${mobile}.jpg`;
+  }
+
+  // Render all student cards with lazy loading and fallback avatar if image not found
+  function renderStudents(students) {
+    const container = document.getElementById('profilesContainer');
+    if (!students.length) {
+      container.innerHTML = `<div class="no-results"><i class="fas fa-user-slash"></i> কোনো শিক্ষার্থী খুঁজে পাওয়া যায়নি।</div>`;
+      return;
+    }
+    container.innerHTML = students.map(student => {
+      const imgSrc = getImageSrc(student.mobile);
+      // Handle facebook link: if empty or "—" or placeholder, show no-fb
+      let fbUrl = student.fb && student.fb.trim() !== "" && student.fb !== "—" && student.fb !== "Riz wan" ? student.fb : null;
+      const fbDisplay = fbUrl ? `<a href="${fbUrl}" target="_blank" class="fb-link"><i class="fab fa-facebook-f"></i> ফেসবুক প্রোফাইল</a>` : `<span class="fb-link no-fb"><i class="fab fa-facebook-f"></i> অনুপলব্ধ</span>`;
+      return `
+        <div class="card fade-in">
+          <img src="${imgSrc}" alt="${student.name}" class="card-img" loading="lazy" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?background=0b2b42&color=fff&bold=true&name=${encodeURIComponent(student.name)}&size=200';">
+          <div class="card-content">
+            <div class="student-name"><i class="fas fa-user-graduate"></i> ${student.name}</div>
+            <div class="detail-item"><i class="fas fa-map-marker-alt"></i> ${student.address}</div>
+            <div class="detail-item"><i class="fas fa-phone-alt"></i> ${student.mobile}</div>
+            <div class="detail-item"><i class="fas fa-id-card"></i> HSC রোল: ${student.roll || "—"}</div>
+            <div class="detail-item"><i class="fas fa-university"></i> ${student.university}</div>
+            <div class="detail-item"><i class="fas fa-book-open"></i> ${student.dept}</div>
+            ${fbDisplay}
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  // Populate university filter dropdown dynamically (unique universities)
+  function populateUniversityFilter() {
+    const uniqUnivs = [...new Set(studentsData.map(s => s.university))].sort();
+    const filterSelect = document.getElementById('universityFilter');
+    uniqUnivs.forEach(uni => {
+      const option = document.createElement('option');
+      option.value = uni;
+      option.textContent = uni;
+      filterSelect.appendChild(option);
+    });
+  }
+
+  // Global filter state
+  let currentSearch = '';
+  let currentUniv = 'all';
+
+  // filter logic: combines search text (name, roll, mobile, university, address) and university dropdown
+  function filterStudents() {
+    let filtered = [...studentsData];
+    if (currentSearch.trim() !== '') {
+      const term = currentSearch.trim().toLowerCase();
+      filtered = filtered.filter(s => 
+        s.name.toLowerCase().includes(term) ||
+        s.mobile.includes(term) ||
+        s.roll.toString().toLowerCase().includes(term) ||
+        s.university.toLowerCase().includes(term) ||
+        s.address.toLowerCase().includes(term)
+      );
+    }
+    if (currentUniv !== 'all') {
+      filtered = filtered.filter(s => s.university === currentUniv);
+    }
+    renderStudents(filtered);
+  }
+
+  // Event listeners for search input & filter dropdown
+  document.getElementById('searchInput').addEventListener('input', (e) => {
+    currentSearch = e.target.value;
+    filterStudents();
+  });
+  document.getElementById('universityFilter').addEventListener('change', (e) => {
+    currentUniv = e.target.value;
+    filterStudents();
+  });
+
+  // ========== DARK MODE TOGGLE with local storage persistence ==========
+  const darkToggle = document.getElementById('darkModeToggle');
+  const prefersDark = localStorage.getItem('darkMode') === 'true';
+  if (prefersDark) {
+    document.body.classList.add('dark');
+    if(darkToggle) darkToggle.innerHTML = '<i class="fas fa-sun"></i> <span>লাইট মোড</span>';
+  }
+  darkToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const isDark = document.body.classList.contains('dark');
+    localStorage.setItem('darkMode', isDark);
+    darkToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i> <span>লাইট মোড</span>' : '<i class="fas fa-moon"></i> <span>ডার্ক মোড</span>';
+  });
+
+  // Initialize: populate university filter and render all students
+  populateUniversityFilter();
+  renderStudents(studentsData);
+
+  // Smooth scroll for any internal anchor links (optional enhancement)
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const hash = this.getAttribute('href');
+      if(hash === "#") return;
+      const target = document.querySelector(hash);
+      if(target) { e.preventDefault(); target.scrollIntoView({behavior: 'smooth'}); }
+    });
+  });
+</script>
+</body>
+</html>
