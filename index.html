@@ -81,7 +81,7 @@
     .logo-img {
       width: 70px;
       height: 70px;
-      object-fit: contain;  /* পিএনজি লোগো ঠিকমতো দেখানোর জন্য contain ব্যবহার করলাম */
+      object-fit: contain;
       border-radius: 20px;
       background: white;
       padding: 8px;
@@ -260,7 +260,6 @@
       box-shadow: 0 20px 30px -12px rgba(0, 0, 0, 0.2);
     }
 
-    /* ইমেজ র‍্যাপার - সব ছবি সমান সাইজে দেখানোর জন্য */
     .card-img-wrapper {
       width: 100%;
       height: 260px;
@@ -459,7 +458,6 @@
       <h1>অনিন্দ্য '২৫</h1>
       <p>BAF Shaheen College Bogura <br> Batch Directory & Admission Journey</p>
     </div>
-    <!-- ডানের লোগো: bafsb.png (এখন পিএনজি ফরম্যাট) -->
     <img src="bafsb.png" alt="BAFSB Logo" class="logo-img" onerror="this.src='https://placehold.co/70x70?text=BAFSB'">
   </div>
 
@@ -522,9 +520,11 @@
 </div>
 
 <script>
-  // ========== সকল ছাত্রছাত্রীর তথ্য ==========
+  // ========== সকল ছাত্রছাত্রীর তথ্য (আপডেটেড: ৩ জন নতুন যুক্ত) ==========
+  // Nishat Salsabil কে ২য় পজিশনে এবং বাকি ২ জন শেষে অ্যাড করা হয়েছে
   const studentsData = [
     { name: "Md. Shahriar Haque Shaon", address: "Upashahar, Bogura Sadar, Bogura", mobile: "01735402414", roll: "126396", university: "University of Rajshahi", dept: "Population Science and Human Resources Development", fb: "https://facebook.com/shshaonok" },
+    { name: "Nishat Salsabil", address: "Baropur, bogura", mobile: "01743281090", roll: "—", university: "Northern University Bangladesh", dept: "CSE", fb: "https://www.facebook.com/share/1MSSVmKU6E/" },  // ২য় পজিশন
     { name: "Al Zaber", address: "Sirajganj", mobile: "01980442815", roll: "126362", university: "International University of Business Agriculture and Technology", dept: "BSAg", fb: "https://www.facebook.com/share/1BBucnDzhf/" },
     { name: "Md Abdullah Sheikh", address: "Pabna", mobile: "01706484029", roll: "126359", university: "Daffodil International University", dept: "CSE", fb: "" },
     { name: "MD Hridoy Talukder", address: "Sirajganj", mobile: "01304321107", roll: "126363", university: "Daffodil International University", dept: "EEE", fb: "" },
@@ -549,7 +549,10 @@
     { name: "Nazim Uddin", address: "Gaibandha", mobile: "01750645992", roll: "212467", university: "Patuakhali Science and Technology University", dept: "Fisheries", fb: "" },
     { name: "Md Shakil Sheikh", address: "Shibganj, Bogura", mobile: "01731184408", roll: "126391", university: "Azizul Haque College", dept: "Islamic History and Culture", fb: "https://www.facebook.com/sheikh.mohammad.shakil.992722" },
     { name: "Rizwan", address: "Kalitala, Bogura", mobile: "01793040826", roll: "126368", university: "Govt. Azizul Haque College", dept: "Philosophy", fb: "Riz wan" },
-    { name: "Md Miftahul Jannah Abid", address: "Jamil Nagar, Bogura", mobile: "01580972201", roll: "—", university: "International Islamic University Malaysia", dept: "IT", fb: "" }
+    { name: "Md Miftahul Jannah Abid", address: "Jamil Nagar, Bogura", mobile: "01580972201", roll: "—", university: "International Islamic University Malaysia", dept: "IT", fb: "" },
+    // ========== নতুন ৩ জন (Nishat Salsabil উপরে ২য় পজিশনে যোগ করেছি। নিচে বাকি ২ জন) ==========
+    { name: "Md. Mehedi Hasan", address: "Herok para,Buzruk Boalia,Gobindaganj,Gaibandha,Rangpur", mobile: "01908996310", roll: "126425", university: "Govt. Azizul Haque College", dept: "Physics", fb: "" },
+    { name: "Nafisha Rumman", address: "Baropur, bogura", mobile: "01737855600", roll: "126484", university: "Govt. Azizul Haque College", dept: "philosophy", fb: "https://www.facebook.com/share/1943DLyE5o/" }
   ];
 
   function getImageSrc(mobile) {
@@ -595,6 +598,7 @@
   function populateUniversityFilter() {
     const uniqUnivs = [...new Set(studentsData.map(s => s.university))].sort();
     const filterSelect = document.getElementById('universityFilter');
+    filterSelect.innerHTML = '<option value="all">🎓 সব বিশ্ববিদ্যালয়</option>';
     uniqUnivs.forEach(uni => {
       const option = document.createElement('option');
       option.value = uni;
